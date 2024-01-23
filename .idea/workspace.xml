@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab178a15-72e3-468b-b6ff-70e5b922571c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/SomeClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/Symbol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/service/BitmexClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/service/BitmexClientFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/util/Endpoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/util/Signature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/tuzhilkin_dm/AppTest.java" afterDir="false" />
+    <list default="true" id="ab178a15-72e3-468b-b6ff-70e5b922571c" name="Changes" comment="create structure project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +49,26 @@
     "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.tuzhilkin_dm.App" />
+      <module name="BitmexBot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.tuzhilkin_dm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,8 +77,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705984466431</updated>
-      <workItem from="1705984469870" duration="2082000" />
+      <workItem from="1705984469870" duration="2885000" />
     </task>
+    <task id="LOCAL-00001" summary="create structure project">
+      <created>1705991494032</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705991494032</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,5 +102,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create structure project" />
+    <option name="LAST_COMMIT_MESSAGE" value="create structure project" />
   </component>
 </project>
