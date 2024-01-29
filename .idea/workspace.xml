@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab178a15-72e3-468b-b6ff-70e5b922571c" name="Changes" comment="fix structure project" />
+    <list default="true" id="ab178a15-72e3-468b-b6ff-70e5b922571c" name="Changes" comment="fix OrderHttpRequest">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/AuthenticationHeaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/AuthenticationHeaders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderHttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderHttpRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/service/BitmexClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/service/BitmexClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/service/BitmexClientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/service/BitmexClientFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/util/Signature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/util/Signature.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705984466431</updated>
-      <workItem from="1705984469870" duration="8377000" />
+      <workItem from="1705984469870" duration="15992000" />
     </task>
     <task id="LOCAL-00001" summary="create structure project">
       <created>1705991494032</created>
@@ -115,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706033503569</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix OrderHttpRequest">
+      <created>1706034155904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706034155904</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create structure project" />
     <MESSAGE value="fix structure project" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix structure project" />
+    <MESSAGE value="fix OrderHttpRequest" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix OrderHttpRequest" />
   </component>
 </project>

@@ -1,5 +1,8 @@
 package ru.tuzhilkin_dm.bitmexbot.model;
 
+import lombok.Data;
+
+@Data
 public class Order {
     private String orderId;
     private Symbol symbol;
