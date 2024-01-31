@@ -1,6 +1,7 @@
 package ru.tuzhilkin_dm.bitmexbot.model;
 
 import lombok.RequiredArgsConstructor;
+import ru.tuzhilkin_dm.bitmexbot.model.reference.OrderType;
 
 @RequiredArgsConstructor
 public class OrderRequest {
@@ -11,7 +12,6 @@ public class OrderRequest {
     private final String ordType;
     private final Double stopPx;
 
-    // Вынести в отдельный утилитный класс! {
     public static OrderRequest toRequest(Order order) {
         String symbol = order.getSymbol().toString();
         String side = order.isBuy() ? "Buy" : "Sell";
@@ -31,7 +31,5 @@ public class OrderRequest {
             default -> throw new IllegalStateException("Unsupported orderType");
         };
     }
-
-    // }
 
 }

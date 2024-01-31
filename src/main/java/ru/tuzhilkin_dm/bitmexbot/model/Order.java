@@ -2,6 +2,9 @@ package ru.tuzhilkin_dm.bitmexbot.model;
 
 import lombok.Builder;
 import lombok.Data;
+import ru.tuzhilkin_dm.bitmexbot.model.reference.OrderStatus;
+import ru.tuzhilkin_dm.bitmexbot.model.reference.OrderType;
+import ru.tuzhilkin_dm.bitmexbot.model.reference.Symbol;
 
 @Data
 @Builder

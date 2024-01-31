@@ -1,8 +1,6 @@
-package ru.tuzhilkin_dm.bitmexbot.service;
+package ru.tuzhilkin_dm.bitmexbot.client;
 
 import ru.tuzhilkin_dm.bitmexbot.util.Endpoints;
-
-import java.net.http.HttpClient;
 
 public class BitmexClientFactory {
     public static BitmexClient newTestnetBitmexClient(String apiKey, String apiSecretKey) {
