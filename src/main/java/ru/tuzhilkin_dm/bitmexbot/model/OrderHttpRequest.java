@@ -38,6 +38,12 @@ public class OrderHttpRequest {
                 .header("api-key", authenticationHeaders.getApiKey())
                 .header("api-signature", authenticationHeaders.getSignature())
                 .header("api-expires", authenticationHeaders.getExpires())
+                .header("Content-Type", "application/json")
                 .build();
     }
+
+    public HttpRequest getHttpRequest() {
+        return httpRequest;
+    }
+
 }
