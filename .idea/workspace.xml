@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab178a15-72e3-468b-b6ff-70e5b922571c" name="Changes" comment="* add methods sendOrder and getOrders.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/httpRequest/BaseOrderHttpRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/httpRequest/GetOrderHttpRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/util/AppСonstants.java" afterDir="false" />
+    <list default="true" id="ab178a15-72e3-468b-b6ff-70e5b922571c" name="Changes" comment="* refactoring code">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/httpRequest/DeleteOrderHttpRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/AuthenticationHeaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/AuthenticationHeaders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderHttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/httpRequest/PostOrderHttpRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/reference/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/reference/OrderType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/reference/Symbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/service/BitmexClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/client/BitmexClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/service/BitmexClientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/client/BitmexClientFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/tuzhilkin_dm/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/tuzhilkin_dm/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/client/BitmexClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/client/BitmexClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/OrderResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/httpRequest/BaseOrderHttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/httpRequest/BaseOrderHttpRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/httpRequest/GetOrderHttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/httpRequest/GetOrderHttpRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/httpRequest/PostOrderHttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/model/httpRequest/PostOrderHttpRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/util/AppСonstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/tuzhilkin_dm/bitmexbot/util/AppСonstants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +63,7 @@
       <recent name="ru.tuzhilkin_dm.bitmexbot.model.httpRequest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.testConnection">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.tuzhilkin_dm.App" />
       <module name="BitmexBot" />
@@ -78,6 +73,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BitmexBot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.tuzhilkin_dm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.tuzhilkin_dm" />
+      <option name="MAIN_CLASS_NAME" value="ru.tuzhilkin_dm.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,8 +126,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppTest.testConnection" />
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="JUnit.AppTest.testConnection" />
         <item itemvalue="JUnit.AppTest.shouldAnswerWithTrue" />
       </list>
     </recent_temporary>
@@ -130,7 +141,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705984466431</updated>
-      <workItem from="1705984469870" duration="36154000" />
+      <workItem from="1705984469870" duration="43107000" />
     </task>
     <task id="LOCAL-00001" summary="create structure project">
       <created>1705991494032</created>
@@ -174,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706695647385</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="* refactoring code">
+      <created>1706721985722</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706721985723</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +215,7 @@
     <MESSAGE value="fix OrderHttpRequest" />
     <MESSAGE value="* create structure (v.2)" />
     <MESSAGE value="* add methods sendOrder and getOrders." />
-    <option name="LAST_COMMIT_MESSAGE" value="* add methods sendOrder and getOrders." />
+    <MESSAGE value="* refactoring code" />
+    <option name="LAST_COMMIT_MESSAGE" value="* refactoring code" />
   </component>
 </project>

@@ -7,6 +7,8 @@ import ru.tuzhilkin_dm.bitmexbot.client.BitmexClient;
 import ru.tuzhilkin_dm.bitmexbot.client.BitmexClientFactory;
 import ru.tuzhilkin_dm.bitmexbot.util.AppСonstants;
 
+import java.util.List;
+
 public class App {
 
     public static void main(String[] args) {
@@ -27,7 +29,14 @@ public class App {
 
         BitmexClient bitmexClient = BitmexClientFactory.newTestnetBitmexClient(AppСonstants.API_KEY, AppСonstants.API_SECRET_KEY);
 //        bitmexClient.sendOrder(order);
-        bitmexClient.sendOrder(order2);
+//        bitmexClient.sendOrder(order2);
+
 //        bitmexClient.getOrders();
+
+        List<String> orderID = List.of("4a345c9c-3951-4932-b8b2-2b1b78a55e17");
+        bitmexClient.cancelOrder(orderID);
+
+        bitmexClient.getOrders();
+
     }
 }

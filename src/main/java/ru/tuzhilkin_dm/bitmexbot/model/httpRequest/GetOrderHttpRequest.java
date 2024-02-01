@@ -11,13 +11,14 @@ import java.net.http.HttpRequest;
 public class GetOrderHttpRequest extends BaseOrderHttpRequest {
 
     public GetOrderHttpRequest(String apiKey, String apiSecretKey, String baseUrl, String endpoint) {
-        super(apiKey, apiSecretKey, null, baseUrl, endpoint, AppСonstants.GET);
+        super(apiKey, apiSecretKey, null, null, baseUrl, endpoint, AppСonstants.GET);
     }
 
     @Override
     protected void createHttpRequest() {
         String data = "";
-        AuthenticationHeaders authenticationHeaders = new AuthenticationHeaders(apiKey, apiSecretKey, httpMethod, AppСonstants.BASE + endpoint, data);
+        AuthenticationHeaders authenticationHeaders = new AuthenticationHeaders(apiKey, apiSecretKey,
+                httpMethod, AppСonstants.BASE + endpoint, data);
 
         httpRequest = HttpRequest.newBuilder()
                 .uri(URI.create(baseUrl + endpoint))

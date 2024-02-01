@@ -6,6 +6,7 @@ import ru.tuzhilkin_dm.bitmexbot.util.AppСonstants;
 
 import java.net.URI;
 import java.net.http.HttpRequest;
+import java.util.List;
 
 public abstract class BaseOrderHttpRequest {
 
@@ -14,12 +15,16 @@ public abstract class BaseOrderHttpRequest {
     protected final String apiKey;
     protected final String apiSecretKey;
     protected final Order order;
+
+    protected final List<String> orderID;
     protected final String baseUrl;
     protected final String endpoint;
     protected final String httpMethod;
 
-    protected BaseOrderHttpRequest(String apiKey, String apiSecretKey, Order order, String baseUrl, String endpoint, String httpMethod) {
+    protected BaseOrderHttpRequest(String apiKey, String apiSecretKey, Order order, List<String> orderID, String baseUrl,
+                                   String endpoint, String httpMethod) {
         this.order = order;
+        this.orderID = orderID;
         this.apiKey = apiKey;
         this.apiSecretKey = apiSecretKey;
         this.baseUrl = baseUrl;
