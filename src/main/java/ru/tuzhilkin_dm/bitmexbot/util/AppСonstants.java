@@ -6,6 +6,6 @@ public final class AppСonstants {
     public static final String GET = "GET";
     public static final String POST = "POST";
     public static final String DELETE = "DELETE";
-    public static final String API_KEY = "None";
-    public static final String API_SECRET_KEY = "None";
+    public static final String API_KEY = "null";
+    public static final String API_SECRET_KEY = "null";
 }
